@@ -1,0 +1,173 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 720px;
+    margin: 50px auto;
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.etiqueta {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: 34px;
+}
+
+.cabecera p {
+    color: #64748b;
+}
+
+.tarjeta {
+    background: white;
+    padding: 26px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#saludo {
+    font-weight: bold;
+    color: #166534;
+}
+
+#mensaje {
+    font-size: 14px;
+}
+
+.encabezado-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#contador {
+    color: #64748b;
+    font-size: 13px;
+}
+
+#lista-usuarios {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.usuario {
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+    overflow-wrap: anywhere;
+}
+
+.usuario:last-child {
+    border-bottom: none;
+}
+
+.nombre-usuario {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email-usuario {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.vacio {
+    color: #94a3b8;
+    padding: 12px 0;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .encabezado-lista {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

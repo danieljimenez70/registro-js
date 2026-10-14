@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="cabecera">
+            <h1>Registro de usuarios</h1>
+            <p>Introduce tus datos para añadirte a la lista.</p>
+        </header>
+
+        <section class="tarjeta">
+            <h2>Nuevo usuario</h2>
+
+            <form id="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nombre@ejemplo.com"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Registrar usuario</button>
+            </form>
+
+            <p id="saludo" aria-live="polite"></p>
+            <p id="mensaje" aria-live="polite"></p>
+        </section>
+
+        <section class="tarjeta">
+            <div class="encabezado-lista">
+                <h2>Usuarios registrados</h2>
+                <span id="contador">0 usuarios</span>
+            </div>
+
+            <ul id="lista-usuarios">
+                <li class="vacio">Todavía no hay usuarios registrados.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Proyecto de práctica · HTML, CSS y JavaScript</p>
+        </footer>
+    </main>
+</body>
+</html>
